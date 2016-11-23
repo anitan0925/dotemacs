@@ -1,5 +1,4 @@
-;;;; -*- mode: emacs-lisp; coding: utf-8 -*-
-;;;;
+;; -*- mode: emacs-lisp; coding: utf-8 -*-
 
 ;;; font-lockの設定
 (global-font-lock-mode t)
@@ -25,10 +24,11 @@
 (set-face-foreground 'font-lock-type-face "brightyellow")
 
 (set-face-foreground 'font-lock-function-name-face "Color-111")
-(set-face-foreground 'font-lock-builtin-face "brightblue")
-(set-face-foreground 'font-lock-constant-face "brightblue")
+;;(set-face-foreground 'font-lock-builtin-face "brightblue")
+;;(set-face-foreground 'font-lock-constant-face "brightblue")
+(set-face-foreground 'font-lock-builtin-face "color-120")
+(set-face-foreground 'font-lock-constant-face "color-120")
 (set-face-foreground 'font-lock-keyword-face "color-123")
-
 (set-face-foreground 'minibuffer-prompt "color-123")
 
 
@@ -64,8 +64,6 @@
 ;; リージョンに色を入れる
 (setq transient-mark-mode t)
 
-;; ツールバーを非表示
-(tool-bar-mode -1)
 ;; メニューバーを非表示
 (menu-bar-mode -1)
 

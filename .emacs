@@ -2,6 +2,13 @@
 ;;;;
 
 ;;; font-lockの設定
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (global-font-lock-mode t)
 
 (setq default-frame-alist
@@ -62,3 +69,7 @@
 ;; ssh
 (require 'tramp)
 (setq tramp-default-method "ssh")
+
+;; load environment variables
+(let ((envs '("PATH" "VIRTUAL_ENV" "GOROOT" "GOPATH")))
+  (exec-path-from-shell-copy-envs envs))
